@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+use URI::Escape;
+
+if($ENV{'DESKTOP_SESSION'} eq 'pantheon') {
+    $background_file = `gsettings get org.gnome.desktop.background picture-uri`;
+    $absolute_file = uri_unescape(substr($background_file, 8, -2));
+    print("$absolute_file");
+} else {
+    print(`cat ~/.config/nitrogen/bg-saved.cfg | sed -n 's/.*file=//p' | head -n 1`);
+}
