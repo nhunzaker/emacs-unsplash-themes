@@ -8,7 +8,7 @@ See [installation](./INSTALL.md) to get started.
 
 ## Themes
 
-[Green Ferns, Nick Cooper](https://unsplash.com/photos/_1UF_3TlKcQ
+[Green Ferns, Nick Cooper](https://unsplash.com/photos/_1UF_3TlKcQ)
 
 ![Ferns](./samples/elementary-ferns.png)
 
