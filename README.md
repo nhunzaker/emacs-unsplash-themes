@@ -10,7 +10,7 @@ See [installation](./INSTALL.md) to get started.
 
 [Green Ferns, Nick Cooper](https://unsplash.com/photos/_1UF_3TlKcQ)
 
-![Ferns](./samples/elementary-ferns.png)
+![Ferns](./samples/elementary-furns.png)
 
 [Koi Fish, Alice Mourou](https://unsplash.com/photos/RrvGuqx-bOQ):
 
