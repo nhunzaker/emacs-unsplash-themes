@@ -52,4 +52,4 @@ Copy down the [wal-theme.el](./emacs/wal-theme.el) to your theme directory, then
 
 ### Sourcing Wallpapers
 
-You can really use any source for wallpapers, but consider installing the [Unsplash Wallpapers app from the app store](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847?mt=12).
+You can really use any source for wallpapers, but consider installing [Unsplash Wallpapers app from the app store](https://apps.apple.com/us/app/unsplash-wallpapers/id1284863847?mt=12).
