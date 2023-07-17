@@ -2,6 +2,12 @@
 
 Note - this project only works on OSX. For Linux, see the `linux` branch.
 
+You can perform all setup actions by running:
+
+```bash
+./scripts/install
+```
+
 ### System setup
 
 Color theme generation is produced by [pywal](https://github.com/dylanaraps/pywal) using the [haishoku](https://github.com/LanceGin/haishoku) backend
@@ -25,11 +31,12 @@ ln -s ./wal-colors ~/.local/bin/wal-colors
 
 ### Emacs setup
 
-Copy down the [wal-theme.el](./emacs/wal-theme.el) theme. To your Emacs configuration, then add the following config:
+Copy down the [wal-theme.el](./emacs/wal-theme.el) to your theme directory, then add the following config:
 
 ```emacs-lisp
 (use-package ewal) ; or get ewal some other way
 
+;; Or whatever your theme directory is
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 (defun user/apply-theme ()
@@ -37,9 +44,10 @@ Copy down the [wal-theme.el](./emacs/wal-theme.el) theme. To your Emacs configur
   (shell-command "~/.local/bin/wal-colors")
   (load-theme 'wal t))
 
-(add-function :after after-focus-change-function 'user/apply-theme)
-
 (user/apply-theme)
+
+;; Optional, run this hook when refocusing emacs
+(add-function :after after-focus-change-function 'user/apply-theme)
 ```
 
 ### Sourcing Wallpapers
