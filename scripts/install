@@ -3,5 +3,7 @@
 pip3 install pywal haishoku
 brew install wallpaper
 
-mkdir -p ~/.local/bin
-ln -s ./wal-colors ~/.local/bin/wal-colors
+DIR=$(dirname "$0")
+
+mkdir -p $HOME/.local/bin
+ln -sfv $(realpath $DIR/wal-colors) $HOME/.local/bin/wal-colors
