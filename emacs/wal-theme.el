@@ -11,10 +11,9 @@
 ;;; Code:
 
 (deftheme wal
-  "Wal color informed color scheme")
+  "Wal color informed color scheme.")
 
 (require 'ewal)
-
 (require 'color)
 
 (let ((theme-base00 (ewal-load-color 'black +2))
@@ -36,7 +35,7 @@
       (theme-gutter (ewal-load-color 'background -8))
       (theme-foreground (ewal-load-color 'foreground))
       (theme-background (ewal-load-color 'background))
-      (theme-cursor (ewal-load-color 'background +1.7)))
+      (theme-cursor (ewal-load-color 'background +10)))
   (let ((background-color theme-background)
         (foreground-color theme-foreground)
         (gutter-color theme-gutter)
@@ -113,7 +112,7 @@
 
      ;; Basics
      `(cursor ((t (:background ,region-color))))
-     `(default ((t (:background ,background-color :foreground ,text-color :weight light))))
+     `(default ((t (:background ,background-color :foreground ,text-color))))
      `(isearch ((t (:background ,highlight-color :foreground ,background-color))))
      `(isearch-fail ((t (:background unspecified :foreground ,error-color))))
      `(match ((t (:background ,focus-color :foreground unspecified))))
@@ -290,7 +289,9 @@
      ;; org
      `(org-document-title ((t (:foreground ,theme-base09))))
      `(org-todo ((t (:foreground ,theme-base09 :slant italic))))
+;     `(org-headline-todo ((t (:foreground ,theme-base09 :slant italic))))
      `(org-done ((t (:foreground ,theme-base02 :slant italic))))
+     `(org-headline-done ((t (:foreground ,comment-color :slant italic))))
      `(org-link ((t :underline t)))
      `(org-level-1 ((t (:foreground ,foreground-color :background unspecified :height unspecified))))
      `(org-level-2 ((t (:foreground ,foreground-color :background unspecified))))
@@ -315,6 +316,7 @@
      `(org-table ((t (:background unspecified :foreground ,theme-base12))))
      `(org-agenda-structure ((t (:foreground ,theme-base10))))
      `(org-footnote ((t (:foreground ,theme-base13 :underline t))))
+     `(org-tag ((t (:foreground ,comment-color :underline nil))))
      `(org-sexp-date ((t (:foreground ,theme-base13))))
      `(org-formula ((t (:foreground ,theme-base09))))
 
@@ -322,8 +324,8 @@
      `(mode-line-highlight ((t (:foreground ,highlight-color :slant italic))))
      `(mode-line-buffer-id ((t (:background unspecified :foreground unspecified :slant italic))))
      `(mode-line-buffer-id-inactive ((t (:background unspecified :foreground unspecified))))
-     `(mode-line-inactive ((t (:background ,gutter-color :foreground ,theme-base08 :weight light :height 110 :box(:line-width 6 :color ,gutter-color)))))
-     `(mode-line ((t (:inherit mode-line-inactive :foreground ,text-color))))
+     `(mode-line-inactive ((t (:background ,gutter-color :foreground ,theme-base08 :weight light :height 140 :box (:line-width 6 :color ,gutter-color)))))
+     `(mode-line ((t (:inherit mode-line-inactive :foreground ,text-color :height 140))))
 
      ;; Elixir Mode
      `(elixir-attribute-face ((t (:foreground ,attribute-color))))
@@ -364,6 +366,9 @@
      `(neo-dir-link-face ((t :foreground ,theme-base13)))
      `(neo-file-link-face ((t :foreground ,text-color)))
      `(neo-expand-btn-face ((t :foreground ,theme-base01)))
+
+     `(term ((t :weight normal)))
+     `(term-bold ((t :weight normal)))
      )))
 
 ;;;###autoload

@@ -1,12 +1,11 @@
 # Emacs Unsplash Themes
 
-A collection of unsplash wallpapers with contrasting Emacs themes.
-
-This isn't really done, but showcases a series of theme colors with wallpapers, mostly for my own reference. I use the [ElementaryOS](elementary.io/) app [Fondo](https://appcenter.elementary.io/com.github.calo001.fondo/) to find wallpapers from [Unsplash](https://unsplash.com).
+A compilation of scripts and guides to setup automatic theme creation
+for random Unsplash wallpapers.
 
 See [installation](./INSTALL.md) to get started.
 
-## Themes
+## Example Themes
 
 [Green Ferns, Nick Cooper](https://unsplash.com/photos/_1UF_3TlKcQ)
 

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+pip3 install pywal haishoku
+brew install wallpaper
+
+mkdir -p ~/.local/bin
+ln -s ./wal-colors ~/.local/bin/wal-colors
